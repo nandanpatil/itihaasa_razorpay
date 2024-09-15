@@ -1,12 +1,11 @@
 import React from 'react';
-import FormComponent from './components/FormComponent';
-
+// import FormComponent from './components/FormComponent';
+import Page from './components/Page';
 function App() {
   return (
     <div className="App">
-      <FormComponent/>
+      <Page/>
     </div>
   );
 }
-
 export default App;

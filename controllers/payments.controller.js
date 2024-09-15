@@ -14,6 +14,8 @@ amount: noOfpeople * 100 * 250, // amount in smallest currency uni
 currency: "INR",
 receipt: receipt_order_1,
 
+// save data here in database
+
 };
 
 try{
@@ -38,6 +40,7 @@ try{
 };
 
 exports.verifyPayment = async (req, res) => {
+    console.log("Verify payment !!!");
     const {order_id, payment_id,signature}=req.body;
     const secret=process.env.RAZORPAY_KEY_SECRET;
     const hmac=crypto.createHmac("sha256",secret);
