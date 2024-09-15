@@ -1,8 +1,8 @@
 
-const { createRazorpayInstance} = require('../config/razorpay.config');
+const { CreateRazorpayInstance} = require('../config/razorpay.config');
 const dotenv = require('dotenv');
 const crypto=require('crypto');
-const razorpayInstace=createRazorpayInstance();
+const razorpayInstace=CreateRazorpayInstance();
 exports.createOrder = async (req, res) => {
 
 //Do not accept amount from client

@@ -26,7 +26,7 @@ const Page = () => {
   // Razorpay options for payment
   const handleRazorpayPayment = (formData: { name: string; phone: string; email: string; number: number }) => {
     const options = {
-      key: 'rzp_test_OV74PA4F46hr4j', // Replace with your Razorpay key
+      key: '', // Replace with your Razorpay key
       amount: formData.number * 100 *250, // Razorpay works with paise, so multiply the amount by 100
       currency: 'INR',
       name: formData.name,
